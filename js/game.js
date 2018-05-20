@@ -1,11 +1,11 @@
-// Create the canvas
+// CANVAS CRIAÇÃO
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
 canvas.width = 512;
 canvas.height = 480;
 document.body.appendChild(canvas);
 
-// Background image
+// IMAGEM FUNDO
 var bgReady = false;
 var bgImage = new Image();
 bgImage.onload = function () {
@@ -21,7 +21,7 @@ marioImage.onload = function () {
 };
 marioImage.src = "images/mario.png";
 
-// Monster image
+// Monstro image
 var monsterReady = false;
 var monsterImage = new Image();
 monsterImage.onload = function () {
@@ -29,9 +29,9 @@ monsterImage.onload = function () {
 };
 monsterImage.src = "images/monster2.png";
 
-// Game objects
+// objetos do jogo
 var mario = {
-	speed: 256 // movement in pixels per second
+	speed: 256 // movimento por segundo em pixel
 };
 var monster = {};
 var monstersCaught = 0;
@@ -103,7 +103,7 @@ var render = function () {
 	ctx.font = "24px Helvetica";
 	ctx.textAlign = "left";
 	ctx.textBaseline = "top";
-	ctx.fillText("Little Monsters caught: " + monstersCaught, 32, 32);
+	ctx.fillText(" Pegue o monstro.                      Score: " + monstersCaught, 32, 32);
 };
 
 // The main game loop
