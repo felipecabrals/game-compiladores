@@ -1,10 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Jogo - Compiladores</title>
-	</head>
-	<body>
-		<script src="js/game.js"></script>
-	</body>
+<html lang="pt-br">
+ <head>
+     <meta charset="utf-8">
+     <title>Guloso</title>
+     <link rel="stylesheet" href="css/fontawesome-all.min.css"/>
+     <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">-->
+     <link rel="stylesheet" href="css/animacao.css"/>
+     <link rel="stylesheet" href="css/menuSuperior.css"/>
+     <link rel="stylesheet" href="css/telaAplicacao.css"/>
+     <link rel="stylesheet" href="css/formatacaoAcaoOpcoesInstrucoes.css"/>
+
+    <!-- <script src="js/faminto.js"></script>-->
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <script src="js/jquery-ui.min.js"></script>
+     <script src="js/animacao/sprite.js"></script>
+     <script src="js/animacao/spritesheet.js"></script>
+     <script src="js/animacao/guloso.js"></script>
+     <script src="js/animacao/campoMinado.js"></script>
+     <script src="js/animacao/alimentacao.js"></script>
+     <script src="js/animacao/explosao.js"></script>
+     <script src="js/animacao/fase.js"></script>
+    <script src="js/animacao/jogada.js"></script>
+    <script src="js/animacao/atualizacaoJogo.js"></script>
+    <script src="js/animacao/inicializacaoJogo.js"></script>
+     <script src="js/funcoesIteratividadeOpcoesInstrucoes.js"></script>
+     <script src="js/interpretadorGuloso.js"></script>
+     <script>
+     </script>
+ </head>
+ <body onload="inicializarJogo()">
+
+    <div class="topnav" id="myTopnav">
+        <div class="dropdown dropdown-left">
+          <img src='imagens/sloganMenuSuperior.png' style="margin-top: 6" alt='Slogan Guloso' height='34' width='130'>
+        </div>
+        <div class="painel-fases" id="painel-fases" name="painel-fases">Fases 1/16</div>
+        <div class="dropdown dropdown-right">
+            <button class="dropbtn">Ajuda <span class="caret">&#9660;</span></button>
+            <div class="dropdown-content dropdown-content-right">
+                    <a href="javascript:void(0)" onclick="mostrarModal('manual do usuário')">Manual do Usuário</a>
+                    <a href="javascript:void(0)" onclick="mostrarModal('sobre')">Sobre Faminto</a>
+            </div>
+        </div>
+    </div>
+
+<!--
+     <div id="menuSuperior" name="menuSuperior">
+            <center><h1>Jogo Faminto</h1></center>
+     </div>
+   -->
+    <center>
+
+       <div id="telaAplicacao" name="telaAplicacao">
+
+              <div class="telaAplicacao">
+                <div id="lixeira" class="lixeira">
+                  <div>
+                    <span class="lixeira-icon">
+                      <i class="fas fa-trash-alt"></i>
+                    </span>
+                    Arraste uma instrução aqui para excluí-la.
+                  </div>
+                </div>
+                <div class="tituloTelaAplicacao">
+                  Ações
+                </div>
+                <div id="opcoesInstrucoes" name="opcoesInstrucoes">
+    		          <div id="setaParaDireita" class="setaParaDireita"><input type="number" step="1" min="1" max="99" value="1"></div>
+    		          <div id="setaParaEsquerda" class="setaParaEsquerda"><input type="number" step="1" min="1" max="99" value="1"></div>
+                  <div id="setaParaCima" class="setaParaCima"><input type="number" step="1" min="1" max="99" value="1"></div>
+    		          <div id="setaParaBaixo" class="setaParaBaixo"><input type="number" step="1" min="1" max="99" value="1"></div>
+                </div>
+                <div class="botaoTelaAplicacao">
+                </div>
+              </div>
+              <div class="telaAplicacao">
+                <div class="tituloTelaAplicacao">
+                  Instruções
+                </div>
+                <div id="instrucoes"  name="instrucoes">
+                </div>
+                <div class="botaoTelaAplicacao">
+                  <button id="botaoExecutar"  name="botaoExecutar">&#9658;</button>
+                </div>
+              </div>
+              <div id="jogo" class="telaAplicacao" name"jogo">
+                <center>
+                  <div id="informacoesJogo" name="informacoesJogo">
+                    <div class="informacoesJogo" id="pontos" name="pontos"></div>
+                    <div class="informacoesJogo" id="vidas" name="vidas"></div>
+                  </div>
+                  <div id="animacao" name="animacao">
+                      <canvas id="canvas" width="500px" height="500px" style="background: black;     magrin:20px;"></canvas>
+                  </div>
+                  <div id="opcoesJogo" name="opcoesJogo">
+                          <!--</br></br><button class="botoes" id="voltar" name="voltar">Voltar</button>
+                          <button  class="botoes" id="repetir" name="repetir">Repetir</button>
+                          <button   class="botoes"id="avancar" name="avancar">Avancar</button>-->
+                  </div>
+                </center>
+              </div>
+       </div>
+     </center>
+ </body>
 </html>

@@ -1,0 +1,154 @@
+/* Remove as margens da pagina web*/
+body {
+  margin:0;
+  background-color: #f0f0f0;
+}
+
+
+/* Adicione uma cor de fundo preto para a navegação superior */
+.topnav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #00BFFF;/*#f5f5f5;*/
+    overflow: hidden;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+}
+
+/* Estilo dos links dentro da barra de navegação */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;/*#333;*/
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Estilo dos imagens dentro da barra de navegação */
+.topnav img {
+    float: left;
+    display: block;
+}
+
+/* Mude a cor dos links e Botão suspenso no hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #00B2EE;/*#ddd;*/
+    color: white;/*black;*/
+}
+
+/* Adicione uma cor ao link ativo / atual */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Botão suspenso */
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown-right {
+    float: right;
+}
+
+.dropdown-left {
+    float: left;
+    padding-left: 2px;
+    padding-right: 30px;
+}
+
+.painel-fases {
+  float: left;
+  font-size: 17px;
+  color: white;/*#333;*/
+  padding: 14px 16px;
+  text-align:center;
+}
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;/*#333;*/
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+/* Conteúdo suspenso (oculto por padrão) */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #00BFFF;/*#f9f9f9;*/
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 6;
+}
+
+.dropdown-content-right{
+  right: 0;
+}
+
+.dropdown-content-left{
+  left: 0;
+}
+/* Links dentro do menu suspenso */
+.dropdown-content a {
+    float: none;
+    color: white;/*#333;*/
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Alterar a cor dos links suspensos em hover */
+.dropdown-content a:hover {
+    background-color: #00B2EE;/*#ddd;*/
+}
+
+/* Mostrar o menu suspenso no hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Conteúdo suspenso do menu arquivo novo (oculto por padrão) */
+#menuArquivoNovoConteudo {
+    float: right;
+    display: none;
+    position: absolute;
+    background-color: #00BFFF;/*#f9f9f9;*/
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 7;
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+/* Links dentro do menu arquivo novo suspenso */
+#menuArquivoNovoConteudo a {
+    float: none;
+    color: white;/*#333;*/
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Alterar a cor dos links suspensos arquivo novo em hover */
+#menuArquivoNovoConteudot a:hover {
+    background-color: #00B2EE;/*#ddd;*/
+}
+
+/* Mostrar conteudo arquivo novo */
+#menuArquivoNovo:hover #menuArquivoNovoConteudo {
+  display: block;
+}
+
+.caret {
+    float: right;
+    color: white;
+    font-size: 14px;
+  }

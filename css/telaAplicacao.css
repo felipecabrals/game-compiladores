@@ -1,0 +1,310 @@
+#telaAplicacao{
+  /*overflow: auto;*/
+  width: 940px;
+  /*background-color: #f5f5f5;*//*#f5f5f5;*/
+  padding-top: 48px;/*49px;*/
+  padding-bottom: 0px;
+  /*z-index: 5;*/
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.telaAplicacao{
+ text-align: center;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: white;
+  width: 200px;
+  height: 600px;
+  /*z-index: 5;*/
+
+}
+
+.tituloTelaAplicacao{
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #444;
+    line-height: 50px;
+    text-align: center;
+    color: #444;
+    font-family: aleo;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.botaoTelaAplicacao{
+  width: 100%;
+  height: 50px;
+  border-top: 2px solid #444;
+  line-height: 50px;
+  text-align: center;
+  color: #444;
+  font-family: aleo;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.botoes{
+   /* Green */
+   background-color: #4CAF50; /* Green */
+   border: none;
+   color: white;
+   padding: 10px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+
+.botoesCirculares{
+  border-radius: 50%;
+}
+
+.botoesVerdes{
+
+}
+
+#botaoExecutar{
+  margin: 4px 2px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  padding: 0px;
+  font-size:26px;
+  color:rgba(50, 205, 50, 1);
+}
+
+#botaoExecutar:hover{
+  border:  2px solid rgba(50, 205, 50, 1);
+  background-color: rgba(50, 205, 50, 0.5);
+}
+
+#opcoesInstrucoes{
+  overflow: auto;
+  width: 200px;
+  height: 500px;
+    /*width: 200px;*/
+    /*left: 0px;*/
+}
+
+#instrucoes{
+    overflow: auto;
+    width: 200px;
+    height: 500px;
+    /*width: 200px;*/
+    /*left: 310px;*/
+    /*left: 210px;*/
+}
+
+#jogo{
+    width: 510px;
+    /*left: 610px;*/
+    /*left: 420px;*/
+  /*  align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;*/
+}
+#informacoesJogo{
+  height: 46px;
+  width: 500px
+}
+.informacoesJogo{
+  display: inline-block;
+  width: 246px;
+  height: 46px;
+  /*border-bottom: 2px solid #444;*/
+  line-height: 50px;
+  text-align: left;
+  color: #444;
+  font-family: aleo;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+
+}
+#animacao{
+    border: 1px solid rgba(211,211,211, 1);
+    height: 500px;
+    width: 500px
+}
+
+#opcoesJogo{
+    /*border: 1px solid rgba(211,211,211, 1);
+    height: 100px;
+    width: 400px*/
+}
+
+/* Inicio da formatação dos botões de opções e do campo para digitar o valor de passos */
+.setaParaCima{
+	background-image:url(../imagens/seta-para-cima-azul.png);
+   height: 100px;
+   width: 66px;
+   border: none;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   font-size: 20px;
+   cursor: default;
+   top: 50%;
+   left: 0px;
+   margin-bottom: 10px;
+   margin-left: 67px;
+ }
+ .setaParaBaixo{
+	background-image:url(../imagens/seta-para-baixo-azul.png);
+   height: 100px;
+   width: 66px;
+   border: none;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   font-size: 20px;
+   cursor: default;
+   top: 50%;
+   left: 0px;
+   margin-bottom: 10px;
+   margin-left: 67px;
+ }
+ .setaParaDireita{
+	background-image:url(../imagens/seta-para-a-direita-azul.png);
+   height: 66px;
+   width: 100px;
+   border: none;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   font-size: 20px;
+   cursor: default;
+   top: 50%;
+   left: 0px;
+   margin-bottom: 10px;
+   margin-left: 50px;
+ }
+ .setaParaEsquerda{
+	background-image:url(../imagens/seta-para-a-esquerda-azul.png);
+   height: 66px;
+   width: 100px;
+   border: none;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   font-size: 20px;
+   cursor: default;
+   top: 50%;
+   left: 0px;
+   margin-bottom: 10px;
+   margin-left: 50px;
+ }
+.setaParaCima input, .setaParaBaixo input {
+	margin-top: 44px;
+	margin-left: 13px;
+	background-color:transparent;
+	width: 40px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+  cursor: default;
+}
+.setaParaCima input:focus, .setaParaBaixo input:focus {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    cursor: default;
+
+}
+.setaParaCima input[type="number"], .setaParaBaixo input[type="number"] {
+    font-family: Arial;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    cursor: default;
+}
+.setaParaDireita input, .setaParaEsquerda input {
+	margin-top: 23px;
+	margin-left: 30px;
+	background-color:transparent;
+	width: 40px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+  cursor: default;
+}
+.setaParaDireita input:focus, .setaParaEsquerda input:focus {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    cursor: default;
+}
+.setaParaDireita input[type="number"], .setaParaEsquerda input[type="number"] {
+    font-family: Arial;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    cursor: default;
+}
+
+.setaParaDireita.executando{
+ background-image:url(../imagens/seta-para-a-direita-verde.png);
+ border: 2px dotted green;
+}
+.setaParaEsquerda.executando{
+ background-image:url(../imagens/seta-para-a-esquerda-verde.png);
+ border: 2px dotted green;
+}
+.setaParaCima.executando{
+ background-image:url(../imagens/seta-para-cima-verde.png);
+ border: 2px dotted green;
+}
+.setaParaBaixo.executando{
+ background-image:url(../imagens/seta-para-baixo-verde.png);
+ border: 2px dotted green;
+}
+
+.setaParaDireita.executada{
+ background-image:url(../imagens/seta-para-a-direita-vermelho.png);
+}
+.setaParaEsquerda.executada{
+ background-image:url(../imagens/seta-para-a-esquerda-vermelho.png);
+}
+.setaParaCima.executada{
+ background-image:url(../imagens/seta-para-cima-vermelho.png);
+}
+.setaParaBaixo.executada{
+ background-image:url(../imagens/seta-para-baixo-vermelho.png);
+}
+
+.setaParaDireita.desabilitada{
+ background-image:url(../imagens/seta-para-a-direita-cinza.png);
+}
+.setaParaEsquerda.desabilitada{
+ background-image:url(../imagens/seta-para-a-esquerda-cinza.png);
+}
+.setaParaCima.desabilitada{
+ background-image:url(../imagens/seta-para-cima-cinza.png);
+}
+.setaParaBaixo.desabilitada{
+ background-image:url(../imagens/seta-para-baixo-cinza.png);
+}
+/*div.ui-state-disabled.ui-setaParaCima-disabled {opacity: 0.2;}
+div.ui-state-disabled.ui-setaParaDireita-disabled {opacity: 0.2;}
+div.ui-state-disabled.ui-setaParaEsquerda-disabled {opacity: 0.2;}
+div.ui-state-disabled.ui-setaParaBaixo-disabled {opacity: 0.2;}*/
+/* Fim da formatação dos botões de opções e do campo para digitar o valor de passos */
