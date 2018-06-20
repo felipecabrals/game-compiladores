@@ -14,11 +14,11 @@ var explosao;
 var fase;
 var jogada;
 var somAnimacao = new Audio();
-somAnimacao.src = 'sons/animacao2.ogg';
+/*somAnimacao.src = 'sons/animacao2.ogg';
 somAnimacao.volume = 0.4;
 somAnimacao.loop = true;
 somAnimacao.autoplay = true;
-somAnimacao.load();
+somAnimacao.load();*/
 function inicializarJogo(){
   canvas = document.getElementById("canvas");
   contexto = canvas.getContext("2d");

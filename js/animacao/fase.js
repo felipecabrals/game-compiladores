@@ -98,7 +98,7 @@ Fase.prototype = {
     }
     conteudo += '<button  class="botoes" onclick="fase.refazerFase()" id="repetir" name="repetir">Repetir</button>';
     if(this.nivel < 10){
-      conteudo += '<button class="botoes" onclick="fase.avancarFase('+(this.nivel + 1)+')" id="avancar" name="avancar">Avancar</button>';
+      conteudo += '<button class="botoes" onclick="fase.avancarFase('+(this.nivel + 1)+')" id="avancar" name="avancar">Avançar</button>';
     }
     $("#opcoesJogo").html(conteudo);
     //console.log("executou");
@@ -113,6 +113,7 @@ Fase.prototype = {
     this.alterarFase(this.nivel);
     this.adicionarPontos(0);
     this.perderVidas(0);
+    alimentacao.quantidadeDeComidas = 0;
     alimentacao.comidas = [];
     campoMinado.minas = [];
     switch(this.nivel){

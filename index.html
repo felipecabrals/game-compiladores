@@ -3,15 +3,14 @@
      <meta charset="utf-8">
      <title>Guloso</title>
      <link rel="stylesheet" href="css/fontawesome-all.min.css"/>
-     <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">-->
+     <link rel="stylesheet" href="css/painelModal.css"/>
      <link rel="stylesheet" href="css/animacao.css"/>
      <link rel="stylesheet" href="css/menuSuperior.css"/>
      <link rel="stylesheet" href="css/telaAplicacao.css"/>
      <link rel="stylesheet" href="css/formatacaoAcaoOpcoesInstrucoes.css"/>
-
-    <!-- <script src="js/faminto.js"></script>-->
      <script src="js/jquery-3.3.1.min.js"></script>
      <script src="js/jquery-ui.min.js"></script>
+     <script src="js/painelModal.js"></script>
      <script src="js/animacao/sprite.js"></script>
      <script src="js/animacao/spritesheet.js"></script>
      <script src="js/animacao/guloso.js"></script>
@@ -38,16 +37,20 @@
             <button class="dropbtn">Ajuda <span class="caret">&#9660;</span></button>
             <div class="dropdown-content dropdown-content-right">
                     <a href="javascript:void(0)" onclick="mostrarModal('manual do usuário')">Manual do Usuário</a>
-                    <a href="javascript:void(0)" onclick="mostrarModal('sobre')">Sobre Faminto</a>
+                    <a href="javascript:void(0)" onclick="mostrarModal('sobre')">Sobre Guloso</a>
             </div>
         </div>
     </div>
+    <!-- Inico do painel modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div id="modal-content" class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-informacoes"></div>
+      </div>
 
-<!--
-     <div id="menuSuperior" name="menuSuperior">
-            <center><h1>Jogo Faminto</h1></center>
-     </div>
-   -->
+    </div>
+    <!-- Fim do painel modal -->
     <center>
 
        <div id="telaAplicacao" name="telaAplicacao">

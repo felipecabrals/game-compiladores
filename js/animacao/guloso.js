@@ -78,7 +78,7 @@ Guloso.prototype = {
             var possuiMina = campoMinado.essaPossicaoNaGridPossuiMina(posicao.x, posicao.y);
             var possuiComida = alimentacao.essaPossicaoNaGridPossuiComida(posicao.x, posicao.y);
             if(possuiComida){
-              somAnimacao.pause();
+              //somAnimacao.pause();
               somMordida.play();
               alimentacao.removerComida(posicao.x, posicao.y);
               fase.adicionarPontos(1);
@@ -88,7 +88,7 @@ Guloso.prototype = {
               jogada.aconteceuAlgumaJogada = false;
               jogada.temJogadaEmAndamento = false;
               jogada.instrucoesDaJogada = [];
-              somAnimacao.pause();
+              //somAnimacao.pause();
               this.naoMostrar();
               var imgExplosao = new Image();
               imgExplosao.src = 'imagens/animacao/explosao.png';
